@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Service packages and frequently asked questions for CreativeConnect."
+    />
+    <title>CreativeConnect | Services</title>
+    <link rel="icon" href="assets/icons/Frame.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style/main.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <div class="flow-line" aria-hidden="true">
+      <svg class="flow-line-svg" data-flow-svg>
+        <path class="flow-line-track" data-flow-track fill="none"></path>
+        <path class="flow-line-fill" data-flow-fill fill="none"></path>
+        <circle class="flow-line-dot" data-flow-dot r="4"></circle>
+      </svg>
+    </div>
+
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="index.html" aria-label="CreativeConnect home">
+          <span class="brand-mark" aria-hidden="true"
+            ><i></i><i></i><i></i></span
+          >CreativeConnect
+        </a>
+        <button
+          class="nav-toggle"
+          aria-expanded="false"
+          aria-controls="site-nav"
+          aria-label="Open navigation menu"
+        >
+          <span></span><span></span><span></span>
+        </button>
+        <nav id="site-nav" class="site-nav" aria-label="Primary">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html" aria-current="page">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="page-hero" aria-labelledby="services-title">
+        <div class="container">
+          <span class="detail-mark" aria-hidden="true"
+            ><i></i><i></i><i></i
+          ></span>
+          <p class="eyebrow">What we deliver</p>
+          <h1 id="services-title">Packages for every project.</h1>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="pricing-title">
+        <div class="container">
+          <div class="section-header">
+            <h2 id="pricing-title">Choose a package</h2>
+            <div
+              class="billing-toggle"
+              role="group"
+              aria-label="Billing period"
+            >
+              <button
+                class="toggle-btn is-active"
+                data-billing="monthly"
+                aria-pressed="true"
+              >
+                Monthly
+              </button>
+              <button
+                class="toggle-btn"
+                data-billing="yearly"
+                aria-pressed="false"
+              >
+                Yearly
+              </button>
+            </div>
+          </div>
+
+          <div class="pricing-grid" aria-live="polite">
+            <article class="pricing-card">
+              <h3>Portfolio</h3>
+              <p class="price" data-monthly="450" data-yearly="4,200">
+                $450
+              </p>
+              <p class="price-note">One deliverable, start to finish.</p>
+              <ul>
+                <li>One creative deliverable</li>
+                <li>Client portal request &amp; tracking</li>
+                <li>Two rounds of revisions</li>
+              </ul>
+            </article>
+
+            <article class="pricing-card featured">
+              <p class="chip">Most chosen</p>
+              <h3>Creative Team</h3>
+              <p class="price" data-monthly="1,600" data-yearly="1,350">
+                $1,600
+              </p>
+              <p class="price-note">Ongoing support for growing brands.</p>
+              <ul>
+                <li>Everything in Portfolio</li>
+                <li>Assigned team member &amp; progress updates</li>
+                <li>Priority feedback turnaround</li>
+              </ul>
+            </article>
+
+            <article class="pricing-card">
+              <h3>Full Delivery</h3>
+              <p class="price" data-monthly="3,200" data-yearly="2,700">
+                $3,200
+              </p>
+              <p class="price-note">Full builds, fully managed.</p>
+              <ul>
+                <li>Everything in Creative Team</li>
+                <li>Custom website or web app build</li>
+                <li>Dedicated project dashboard</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt" aria-labelledby="faq-title">
+        <div class="container">
+          <span class="detail-mark" aria-hidden="true"
+            ><i></i><i></i><i></i
+          ></span>
+          <h2 id="faq-title">Frequently asked questions</h2>
+          <div class="faq-list">
+            <article class="faq-item">
+              <h3>
+                <button
+                  class="faq-btn"
+                  aria-expanded="false"
+                  aria-controls="faq-1"
+                  id="faq-btn-1"
+                >
+                  How do I submit a project request?
+                </button>
+              </h3>
+              <div
+                id="faq-1"
+                class="faq-panel"
+                role="region"
+                aria-labelledby="faq-btn-1"
+                hidden
+              >
+                <p>Send a brief through Contact. We confirm within 48 hours.</p>
+              </div>
+            </article>
+
+            <article class="faq-item">
+              <h3>
+                <button
+                  class="faq-btn"
+                  aria-expanded="false"
+                  aria-controls="faq-2"
+                  id="faq-btn-2"
+                >
+                  Can I track progress once my project starts?
+                </button>
+              </h3>
+              <div
+                id="faq-2"
+                class="faq-panel"
+                role="region"
+                aria-labelledby="faq-btn-2"
+                hidden
+              >
+                <p>Yes — see your assigned team member, status and deadlines anytime.</p>
+              </div>
+            </article>
+
+            <article class="faq-item">
+              <h3>
+                <button
+                  class="faq-btn"
+                  aria-expanded="false"
+                  aria-controls="faq-3"
+                  id="faq-btn-3"
+                >
+                  How are feedback and revisions handled?
+                </button>
+              </h3>
+              <div
+                id="faq-3"
+                class="faq-panel"
+                role="region"
+                aria-labelledby="faq-btn-3"
+                hidden
+              >
+                <p>Every package includes a feedback channel — nothing gets lost in email.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <p>
+          &copy; 2026 CreativeConnect. Built for ICT312 Advanced Web
+          Information Systems by Aries Joshua Andaya.
+        </p>
+        <ul aria-label="Footer links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

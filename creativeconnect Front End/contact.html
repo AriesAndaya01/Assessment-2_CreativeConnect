@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Submit a project request to the CreativeConnect team."
+    />
+    <title>CreativeConnect | Contact</title>
+    <link rel="icon" href="assets/icons/Frame.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style/main.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <div class="flow-line" aria-hidden="true">
+      <svg class="flow-line-svg" data-flow-svg>
+        <path class="flow-line-track" data-flow-track fill="none"></path>
+        <path class="flow-line-fill" data-flow-fill fill="none"></path>
+        <circle class="flow-line-dot" data-flow-dot r="4"></circle>
+      </svg>
+    </div>
+
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="index.html" aria-label="CreativeConnect home">
+          <span class="brand-mark" aria-hidden="true"
+            ><i></i><i></i><i></i></span
+          >CreativeConnect
+        </a>
+        <button
+          class="nav-toggle"
+          aria-expanded="false"
+          aria-controls="site-nav"
+          aria-label="Open navigation menu"
+        >
+          <span></span><span></span><span></span>
+        </button>
+        <nav id="site-nav" class="site-nav" aria-label="Primary">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html" aria-current="page">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="page-hero" aria-labelledby="contact-title">
+        <div class="container">
+          <span class="detail-mark" aria-hidden="true"
+            ><i></i><i></i><i></i
+          ></span>
+          <p class="eyebrow">Start a project</p>
+          <h1 id="contact-title">Start your project.</h1>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="form-title">
+        <div class="container contact-grid">
+          <article>
+            <span class="detail-mark" aria-hidden="true"
+              ><i></i><i></i><i></i
+            ></span>
+            <h2 id="form-title">Submit a project request</h2>
+            <p>We'll reply within 48 hours.</p>
+            <ul class="contact-points">
+              <li>Email: hello@creativeconnect.example</li>
+              <li>Phone: +61 400 000 000</li>
+              <li>Location: Philippines / Remote</li>
+            </ul>
+          </article>
+
+          <form class="contact-form" novalidate>
+            <div class="form-field">
+              <label for="full-name">Full name</label>
+              <input
+                id="full-name"
+                name="fullName"
+                type="text"
+                required
+                autocomplete="name"
+                aria-describedby="error-full-name"
+              />
+              <p
+                class="error-message"
+                id="error-full-name"
+                aria-live="polite"
+              ></p>
+            </div>
+
+            <div class="form-field">
+              <label for="email">Email address</label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                required
+                autocomplete="email"
+                aria-describedby="error-email"
+              />
+              <p class="error-message" id="error-email" aria-live="polite"></p>
+            </div>
+
+            <div class="form-field">
+              <label for="company">Company / brand name</label>
+              <input
+                id="company"
+                name="company"
+                type="text"
+                required
+                autocomplete="organization"
+                aria-describedby="error-company"
+              />
+              <p
+                class="error-message"
+                id="error-company"
+                aria-live="polite"
+              ></p>
+            </div>
+
+            <div class="form-field">
+              <label for="service">Service needed</label>
+              <select
+                id="service"
+                name="service"
+                required
+                aria-describedby="error-service"
+              >
+                <option value="">Select a service</option>
+                <option value="video-editing">Video &amp; Digital Editing</option>
+                <option value="web-development">Web Development</option>
+                <option value="content-creation">Content Creation</option>
+                <option value="graphic-design">Graphic Design</option>
+                <option value="it-support">IT Support &amp; Consulting</option>
+                <option value="other">Other</option>
+              </select>
+              <p
+                class="error-message"
+                id="error-service"
+                aria-live="polite"
+              ></p>
+            </div>
+
+            <div class="form-field">
+              <label for="deadline">Preferred deadline</label>
+              <input
+                id="deadline"
+                name="deadline"
+                type="date"
+                required
+                aria-describedby="error-deadline"
+              />
+              <p
+                class="error-message"
+                id="error-deadline"
+                aria-live="polite"
+              ></p>
+            </div>
+
+            <div class="form-field">
+              <label for="budget">Estimated budget (AUD)</label>
+              <input
+                id="budget"
+                name="budget"
+                type="number"
+                min="100"
+                step="50"
+                required
+                autocomplete="off"
+                aria-describedby="error-budget"
+              />
+              <p class="error-message" id="error-budget" aria-live="polite"></p>
+            </div>
+
+            <div class="form-field">
+              <label for="message">Project brief</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                required
+                aria-describedby="error-message"
+              ></textarea>
+              <p
+                class="error-message"
+                id="error-message"
+                aria-live="polite"
+              ></p>
+            </div>
+
+            <button class="btn btn-primary" type="submit">
+              Submit request
+            </button>
+            <p class="form-success" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <p>
+          &copy; 2026 CreativeConnect. Built for ICT312 Advanced Web
+          Information Systems by Aries Joshua Andaya.
+        </p>
+        <ul aria-label="Footer links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
